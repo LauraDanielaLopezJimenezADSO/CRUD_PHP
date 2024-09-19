@@ -1,0 +1,49 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+   
+    
+}
+
+.formdiv{
+    background-color: rgb(214, 209, 233);
+    border-radius: 10px;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+div{
+    padding: 10px;
+}
+
+button{
+    background: rgb(17, 1, 75);
+    color: white;
+    border-radius: 10px;
+    width: 80px;
+    height: 44px;
+    border: none;
+    font-size: 16px;
+    transition: all 0.8s ease;
+    font-weight: 600;
+}
+
+button:hover{
+    color: rgb(17, 1, 75);
+    background: white;
+}
