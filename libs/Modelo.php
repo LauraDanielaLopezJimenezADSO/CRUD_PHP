@@ -66,6 +66,7 @@ class Modelo {
   public function update($id, $data){
     $sql = "UPDATE users SET ";
     foreach ($data as $key => $value) {
+      if($value == "")continue;
       $sql .= "{$key} = :{$key}, ";
     }
     $sql = trim($sql, ', ');
@@ -75,6 +76,7 @@ class Modelo {
     $stm = $this->db->prepare($sql);
 
     foreach ($data as $key => $value) {
+      if($value == "")continue;
       $stm->bindValue(":{$key}", $value);
     }
     $stm->bindValue(":id", $id);
